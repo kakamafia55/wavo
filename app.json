@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Wavo ويفو",
+    "slug": "wavo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "wavo",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.wavo.naqla",
+      "minSdkVersion": 26,
+      "targetSdkVersion": 35,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_STATE",
+        "CHANGE_NETWORK_STATE",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "CAMERA",
+        "BLUETOOTH_CONNECT"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#090D16"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Wavo (ويفو) to use the camera so you can scan the sender's QR code."
+        }
+      ],
+      "./plugins/withNaQlaWifi"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#090D16"
+    }
+  }
+}
